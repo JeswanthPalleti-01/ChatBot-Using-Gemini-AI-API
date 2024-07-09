@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1B389E2C3CF9700055DE96 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1B389D2C3CF9700055DE96 /* Launch Screen.storyboard */; };
 		EEE56F9B2C3B97240029293D /* ChatBotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE56F9A2C3B97240029293D /* ChatBotApp.swift */; };
 		EEE56F9D2C3B97240029293D /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE56F9C2C3B97240029293D /* ChatView.swift */; };
 		EEE56F9F2C3B97270029293D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEE56F9E2C3B97270029293D /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE1B389D2C3CF9700055DE96 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		EEE56F972C3B97240029293D /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEE56F9A2C3B97240029293D /* ChatBotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBotApp.swift; sourceTree = "<group>"; };
 		EEE56F9C2C3B97240029293D /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
@@ -65,13 +67,14 @@
 			children = (
 				EEE56F9A2C3B97240029293D /* ChatBotApp.swift */,
 				EEE56F9C2C3B97240029293D /* ChatView.swift */,
-				EEE56F9E2C3B97270029293D /* Assets.xcassets */,
-				EEE56FA02C3B97270029293D /* Preview Content */,
-				EEE56FAB2C3B980D0029293D /* GenerativeAI-Info.plist */,
-				EEE56FAD2C3B9CD30029293D /* ChatBubble.swift */,
 				EEE56FAF2C3B9CEC0029293D /* ChatService.swift */,
-				EEE56FB12C3B9E0D0029293D /* APIKey.swift */,
+				EEE56FAD2C3B9CD30029293D /* ChatBubble.swift */,
 				EEE56FB32C3B9E600029293D /* ChatBubbleShape.swift */,
+				EEE56FB12C3B9E0D0029293D /* APIKey.swift */,
+				EEE56F9E2C3B97270029293D /* Assets.xcassets */,
+				EE1B389D2C3CF9700055DE96 /* Launch Screen.storyboard */,
+				EEE56FAB2C3B980D0029293D /* GenerativeAI-Info.plist */,
+				EEE56FA02C3B97270029293D /* Preview Content */,
 			);
 			path = ChatBot;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			files = (
 				EEE56FA22C3B97270029293D /* Preview Assets.xcassets in Resources */,
 				EEE56F9F2C3B97270029293D /* Assets.xcassets in Resources */,
+				EE1B389E2C3CF9700055DE96 /* Launch Screen.storyboard in Resources */,
 				EEE56FAC2C3B980D0029293D /* GenerativeAI-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -307,6 +311,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -338,6 +343,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -14,15 +14,13 @@ struct ChatView: View {
     @State var chatService = ChatService()
     
     var body: some View {
-        NavigationStack{
-            VStack {
-                // MARK: Animating logo
+        VStack {
                 HStack{
                     Spacer()
                     Image("bot.png")
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 90)
+                        .frame(width: 75)
                     Text("AI CHATBOT")
                         .multilineTextAlignment(.center)
                         .font(.system(size: 40))
@@ -34,10 +32,11 @@ struct ChatView: View {
                 // MARK: Chat message list
                 ScrollViewReader(content: { proxy in
                     ScrollView(){
+                        
                         ForEach(chatService.messages) { chatMessage in
                             // MARK: Chat message view
                             chatMessageView(chatMessage)
-                                .font(.system(size: 10))
+                            
                         }
                     }
                     .scrollIndicators(.hidden)
@@ -60,7 +59,7 @@ struct ChatView: View {
                 
                 // MARK: Input fields
                 HStack {
-                    TextField("Enter a message...", text: $textInput)
+                    TextField("Search anything...", text: $textInput)
                         .foregroundStyle(Color.black)
                         .padding()
                         .overlay{
@@ -76,23 +75,26 @@ struct ChatView: View {
                     }
                 }
             }
+        
             .foregroundStyle(.white)
             .padding()
         }
-    }
+    
+        
         
         
         // MARK: Chat message view
         @ViewBuilder 
-        func chatMessageView(_ message: ChatMessage) -> some View {
-            ChatBubble(direction: message.role == .model ? .left : .right) {
-                Text(message.message)
-                    .font(.title3)
-                    .padding(.all, 15)
-                    .foregroundStyle(.white)
-                    .background(message.role == .model ? Color.blue : Color.green)
-            }
-        }
+func chatMessageView(_ message: ChatMessage) -> some View {
+    ChatBubble(direction: message.role == .model ? .left : .right) {
+        Text(message.message)
+            .font(.system(size: 16))
+            .padding(.all, 15)
+            .foregroundStyle(.white)
+            .background(message.role == .model ? Color.blue : Color.green)
+            .textSelection(.enabled)
+    }
+}
         
         // MARK: Fetch response
         func sendMessage() {
